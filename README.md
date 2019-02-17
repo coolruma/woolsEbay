@@ -36,16 +36,16 @@ What gulp execute does?
 ## To Run the Tests on Specified Environment:
 Gulp(Task Runner) is integrated to work with this project. So, you can go ahead by using the below command
 ```sh
-$ gulp execute --env <environmentName>
+$ gulp execute 
 ```
-ex: $ gulp execute --env uat
+ex: $ gulp execute 
 
 ## To Run the Tests on Specified Environment & specific feature:
 Gulp(Task Runner) is integrated to work with this project. So, you can go ahead by using the below command
 ```sh
-$ gulp execute --env <environmentName> --specs <featureName>.feature
+$ gulp execute 
 ```
-ex: $ gulp execute --env uat --specs MGLLogin.feature
+ex: $ gulp execute
 
 ## HTML reports:
 
@@ -57,35 +57,6 @@ Screenshot will show up in the report when there is a failure. Click on the red 
 ## Framework Structure:
 We are using BDD Framework with Page object model approach where it will be easy to distinguish all the files used in a structured way,
 
-```sh
-|-- reports
-├── tests
-│      ├── common
-│      │   ├── settings.js
-│      │   └── ...
-│      ├── featureFiles
-│      │   ├── LoginFunctionality
-│      │   │   ├──  DEFTMyAccount.feature
-│      │   │   ├── Login.feature
-│      │   │   └── ...
-│      │   │   └── step_definitions
-│      │   │       ├── Home_steps.js
-│      │   │       ├── My_account_steps.js
-│      │   │       ├── Login_steps.js
-│      │   │       └── ...
-│      ├── pages
-│      │   ├── homePage.js
-│      │   ├── mglHomePage.js
-│      │   └── ...
-│      └── support
-│      │   ├── cucumber-json-formatter.js
-│      │   └── hooks.js
-|      |   ___ ...
-├── package.json
-├── gulpfile.js
-├── conf.js
-├── README.md
-```
 
 ### Additions:
    Supported Browsers: Chrome (as of now)
