@@ -1,0 +1,145 @@
+[
+  {
+    "description": "  As a user on navigates to ebay site\n  I want to be able to add 2 items to the cart/trolley and go to checkout",
+    "elements": [
+      {
+        "id": "ebay-checkout-verification;verify-the-checkouts-items-on-ebay",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify the checkouts items on ebay",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the user is on ebay home page",
+            "result": {
+              "status": "passed",
+              "duration": 2321650165
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/featureFiles/step_definitions/ebay_checkout_verification_steps.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user enters first Product as 'GERMANY 50 REICHSPFENNIG WWII-NAZI SWASTIKA -CIRCULATED' and Click on serach button",
+            "result": {
+              "status": "passed",
+              "duration": 59156258421
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/featureFiles/step_definitions/ebay_checkout_verification_steps.js:17"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the user should see the product added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 648984
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/featureFiles/step_definitions/ebay_checkout_verification_steps.js:67"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 914530
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/support/screenshot.js:2"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@env:uat",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "ebay-checkout-verification;verify-the-checkouts-items-on-ebay",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verify the checkouts items on ebay",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the user is on ebay home page",
+            "result": {
+              "status": "passed",
+              "duration": 4107746291
+            },
+            "line": 17,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/featureFiles/step_definitions/ebay_checkout_verification_steps.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user enters second Product as '1939 Germany 2 Mark .625 Silver Coin' and Click on serach button",
+            "result": {
+              "status": "passed",
+              "duration": 30491530642
+            },
+            "line": 18,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/featureFiles/step_definitions/ebay_checkout_verification_steps.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the user should see the product added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 493638
+            },
+            "line": 19,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/featureFiles/step_definitions/ebay_checkout_verification_steps.js:67"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 96578
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/support/screenshot.js:2"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@env:uat",
+            "line": 21
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ebay-checkout-verification",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Ebay checkout Verification",
+    "tags": [],
+    "uri": "/Users/uabhinav/gitRepo/testProjectWoolies/tests/featureFiles/ebayCheckoutVerification.feature"
+  }
+]

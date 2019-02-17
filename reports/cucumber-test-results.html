@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/init.js"></script>
+</head>
+<body>
+
+<div class="container">
+<header class="passed">
+    <h1>Cucumber features</h1>
+    <div class="test-summary">
+        <div class="scenarios-summary">2 scenarios ( 2 passed)</div>
+        <div class="steps-summary">6 steps ( 6 passed)</div>
+    </div>
+</header>
+<div class="row">
+    <div class="filtering-buttons">
+        <div class="col-md-9 col-sm-8 main_btns">
+            <div class="btn_menu">
+                <button data-state="all" class="btn all_btn active" id="all_btn">All</button>
+                <button data-state="passed" class="btn passed_btn" id="passed_btn">Passed</button>
+                <button data-state="failed" class="btn error_btn" id="error_btn">Error</button>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 additional_btns">
+            <div class="btn_support">
+                <button data-state="steps" title="Display all steps within scenario" class="btn fa fa-list btn_list" id="display_btn"></button>
+                <button data-state="chart" title="Display chart" class="btn fa fa-pie-chart btn_chart"></button>
+            </div>
+        </div>
+    </div>
+</div><div class="row">
+    <div class="col-md-9 col-sm-8">
+        <div class="feature">
+            <h2><i class="fa fa-magic"></i> Feature:</h2>
+
+            <div class="feature-description">
+                Ebay checkout Verification
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 feature-statistics">
+        <div class="scenario-label">Scenarios</div>
+        <div class="scenario-amount-passed"> 2/2 <br/><span>passed</span></div>
+        <div class="clear"></div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-amount-passed"> 6/6 <br/><span>passed</span></div>
+    </div>
+</div><div class="scenario-container"><div class="scenario passed">
+    Scenario: Verify the checkouts items on ebay
+</div><div class="step passed">
+    Given the user is on ebay home page
+    
+    
+</div><div class="step passed">
+    When the user enters first Product as 'GERMANY 50 REICHSPFENNIG WWII-NAZI SWASTIKA -CIRCULATED' and Click on serach button
+    
+    
+</div><div class="step passed">
+    Then the user should see the product added in the cart
+    
+    
+</div></div><div class="scenario-container"><div class="scenario passed">
+    Scenario: Verify the checkouts items on ebay
+</div><div class="step passed">
+    Given the user is on ebay home page
+    
+    
+</div><div class="step passed">
+    When the user enters second Product as '1939 Germany 2 Mark .625 Silver Coin' and Click on serach button
+    
+    
+</div><div class="step passed">
+    Then the user should see the product added in the cart
+    
+    
+</div></div>
+
+    <div class="scenario-chart">
+        <div class="close_chart fa fa-times"></div>
+        <h1 class="chart-title">Scenario statistics</h1>
+        <canvas id="chart" class="chart" width="400" height="400">Your browser doesn't support HTML5 Canvas.</canvas>
+        <div class="legend-details">
+            <h2 class="chart-legend" id="legend">Legend: </h2>
+
+            <div class="legend_passed">passed</div>
+            <div class="legend_failed">failed</div>
+        </div>
+    </div>
+</div>
+ <div class="document_container"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+C02S8XGYFVH3:testProjectWoolies rabhinav$ gulp execute
+[11:45:53] Using gulpfile ~/gitRepo/testProjectWoolies/gulpfile.js
+[11:45:53] Starting 'execute'...
+(node:7227) [DEP0022] DeprecationWarning: os.tmpDir() is deprecated. Use os.tmpdir() instead.
+[11:45:54] I/launcher - Running 1 instances of WebDriver
+[11:45:54] I/hosted - Using the selenium server at http://localhost:4444/wd/hub
+Feature: Ebay checkout Verification
+
+    As a user on navigates to ebay site
+    I want to be able to add 2 items to the cart/trolley and go to checkout
+
+  @env:uat
+  Scenario: Verify the checkouts items on ebay
+  ✔ Given the user is on ebay home page
+  ✔ When the user enters first Product as 'GERMANY 50 REICHSPFENNIG WWII-NAZI SWASTIKA -CIRCULATED' and Click on serach button
+  ✔ Then the user should see the product added in the cart
+
+  @env:uat
+  Scenario: Verify the checkouts items on ebay
+  ✔ Given the user is on ebay home page
+  ✔ When the user enters second Product as '1939 Germany 2 Mark .625 Silver Coin' and Click on serach button
+  ✔ Then the user should see the product added in the cart
+
+2 scenarios (2 passed)
+6 steps (6 passed)
+1m36.080s
+json file location: /Users/uabhinav/gitRepo/testProjectWoolies/reports/cucumber-test-results.json
+[11:47:32] I/launcher - 0 instance(s) of WebDriver still running
+[11:47:32] I/launcher - chrome #01 passed
+[11:47:32] Starting Report generation on end
+[11:47:32] Starting 'report'...
+[11:47:32] Finished 'report' after 9.17 ms
+[11:47:32] Finished 'execute' after 1.65 min
+[11:47:32] gulp-protractor-cucumber-html-reporter: HTML report has been created in reports/cucumber-test-results.html
